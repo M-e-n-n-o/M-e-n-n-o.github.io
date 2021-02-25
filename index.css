@@ -2,7 +2,7 @@ body, html {
     height: 100%;
     margin: 0;
 
-    background-image: url("game.png");
+    background-image: url("res/game.png");
 
     background-position: center;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@ div.title {
     justify-content: center;
     text-align: center;
 
-    background-image: url("cube.png");
+    background-image: url("res/cube.png");
     background-position: center;
     background-repeat: no-repeat;
 }
