@@ -1,8 +1,8 @@
-var canvas;
+let canvas;
 
-const maxSpeed = 5;
+const maxSpeed = 3;
 
-const totalDots = 5;
+let totalDots;
 const dots = [];
 const velocities = [];
 
@@ -10,6 +10,8 @@ function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
     canvas.position(0, 0);
     canvas.style('z-index', '0')
+
+    totalDots = (width * height) / 500000;
 
     //Initialize the dots
     if (dots[0] == null) {
@@ -30,6 +32,7 @@ function draw() {
     clear();
     fill('rgb(23,48,66)');
     stroke('rgb(23,48,66)');
+    strokeWeight(4);
 
     for (let i = 0; i < totalDots; i++) {
         dots[i].x += velocities[i].x;
@@ -59,7 +62,7 @@ function draw() {
         }
 
         //draw the lines and circles
-        circle(dots[i].x, dots[i].y, 5);
+        circle(dots[i].x, dots[i].y, 10);
         if (i < totalDots - 1) {
             line(dots[i].x, dots[i].y, dots[i + 1].x, dots[i + 1].y);
         } else {
