@@ -1,6 +1,6 @@
 var canvas;
 
-const maxSpeed = 2;
+const maxSpeed = 5;
 
 const totalDots = 5;
 const dots = [];
@@ -29,7 +29,6 @@ function draw() {
     clear();
     fill('rgb(23,48,66)');
     stroke('rgb(23,48,66)');
-    //stroke(150, 100, 100);
 
     for (let i = 0; i < totalDots; i++) {
         dots[i].x += velocities[i].x;
