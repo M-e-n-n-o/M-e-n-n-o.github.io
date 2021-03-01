@@ -27,8 +27,9 @@ function windowResized() {
 
 function draw() {
     clear();
-    fill(150, 100, 100);
-    stroke(150, 100, 100);
+    fill('rgb(23,48,66)');
+    stroke('rgb(23,48,66)');
+    //stroke(150, 100, 100);
 
     for (let i = 0; i < totalDots; i++) {
         dots[i].x += velocities[i].x;

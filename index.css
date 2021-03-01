@@ -10,23 +10,17 @@ body, html {
 }
 
 div.title {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-    background-image: url("res/cube.png");
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-h1 {
-    font-size: xxx-large;
     color: white;
+    font-size: 2.5vmax;
+    font-family: fantasy;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    -webkit-transform: translate(-20%, -50%);
+    transform: translate(-20%, -50%);
 }
 
-p {
+a {
     color: white;
 }
 
