@@ -9,6 +9,7 @@ const velocities = [];
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
     canvas.position(0, 0);
+    canvas.style('z-index', '0')
 
     //Initialize the dots
     if (dots[0] == null) {

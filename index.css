@@ -10,6 +10,7 @@ body, html {
 }
 
 div.title {
+    z-index: 1;
     color: white;
     font-size: 2.5vmax;
     font-family: fantasy;
