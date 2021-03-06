@@ -2,7 +2,7 @@ let canvas;
 
 const maxSpeed = 3;
 
-let totalDots;
+const totalDots = 5;
 const dots = [];
 const velocities = [];
 
@@ -10,8 +10,6 @@ function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
     canvas.position(0, 0);
     canvas.style('z-index', '0')
-
-    totalDots = (width * height) / 500000;
 
     //Initialize the dots
     if (dots[0] == null) {
