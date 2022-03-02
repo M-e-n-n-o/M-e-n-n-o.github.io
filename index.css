@@ -3,7 +3,7 @@ html {
     height: 100%;
     margin: 0;
 
-    font-family: fantasy;
+    font-family: fantasy, Impact, 'Arial Narrow Bold', sans-serif;
 
     background-image: url("res/game.png");
 
@@ -19,7 +19,7 @@ html {
     font-size: 2.5vmax;
     left: calc(20% - 1rem);
     transition: left .2s ease-in-out;
-    top: 40%;
+    top: 30%;
 }
 
 .title-text-container {
