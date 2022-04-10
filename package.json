@@ -1,0 +1,38 @@
+{
+  "name": "codingwithmenno.github.io",
+  "version": "0.0.0",
+  "description": "CodingWithMenno.github.io",
+  "homepage": "https://codingwithmenno.github.io/",
+  "author": "CodingWithMenno",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingWithMenno/CodingWithMenno.github.io.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/CodingWithMenno/CodingWithMenno.github.io/issues"
+  },
+  "dependencies": {
+    "p5": "^1.4.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@honkhonk/vite-plugin-svgr": "^1.1.0",
+    "@types/react": "^18.0.1",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "autoprefixer": "^10.4.4",
+    "gh-pages": "^3.2.3",
+    "postcss": "^8.4.12",
+    "sass": "^1.50.0",
+    "tailwindcss": "^3.0.23",
+    "vite": "^2.9.1"
+  }
+}

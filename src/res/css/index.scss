@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body,
 html {
     height: 100%;
@@ -5,7 +9,7 @@ html {
 
     font-family: fantasy, Impact, 'Arial Narrow Bold', sans-serif;
 
-    background-image: url("res/game.png");
+    background-image: url("/src/res/images/game.png");
 
     background-position: center;
     background-repeat: no-repeat;
