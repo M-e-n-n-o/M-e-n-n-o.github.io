@@ -1,0 +1,46 @@
+.front-container {
+    background-image: url("/src/res/images/game.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 2.5vmax;
+    left: calc(20% - 1rem);
+    transition: left .2s ease-in-out;
+    top: 30%;
+}
+
+.title-text-container {
+    padding-left: 1rem;
+    transition: padding .2s ease-in-out;
+}
+
+@media (min-width: 500px) {
+    .title {
+        left: calc(20% - 2rem);
+    }
+
+    .title-text-container {
+        padding-left: 2rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .title {
+        left: calc(20% - 3rem);
+    }
+
+    .title-text-container {
+        padding-left: 3rem;
+    }
+}
+
+.title-text {
+    font-size: 4em;
+}
