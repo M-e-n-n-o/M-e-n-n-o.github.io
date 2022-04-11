@@ -1,95 +1,64 @@
 import React, { useEffect, useState } from 'react';
-import Period from "./Period";
 import Project from "./Project";
 import Technology from "./Technology";
 
-const parsePeriod = (period) => {
-    let { children = [], title } = period.props;
-
-    if (children.type) {
-        children = [children];
-    }
-
-    const result = {
-        technologies: [],
-        periods: [title],
-        projects: []
-    };
-
-    children.forEach((child) => {
-        const childResult = parseChild(child);
-        result.technologies = [...new Set(result.technologies.concat(childResult.technologies))];
-        result.projects = result.projects.concat(childResult.projects);
-        result.periods = result.periods.concat(childResult.periods);
-    });
-
-    return result;
+const sortFunctions = {
+    "Datum ↑": (projectA, projectB) => (projectA.end ?? new Date(Date.now())) > (projectB.end ?? new Date(Date.now() - 1)),
+    "Datum ↓": (projectA, projectB) => (projectA.end ?? new Date(Date.now())) < (projectB.end ?? new Date(Date.now() - 1)),
+    "Naam ABC": (projectA, projectB) => projectA.title.toLowerCase() < projectB.title.toLowerCase(),
+    "Naam CBA": (projectA, projectB) => projectA.title.toLowerCase() > projectB.title.toLowerCase()
 };
 
-const parseProject = (project) => {
-    const { technologies, title } = project.props;
-
-    const result = {
-        technologies: [],
-        projects: [title]
-    };
-
-    technologies.forEach((tech) => {
-        if (tech.type !== Technology) { return; }
-        result.technologies.push(tech.props.name);
-    });
-    return result;
-};
-
-const parseChild = (child) => {
-    let result = {
-        technologies: [],
-        periods: [],
-        projects: []
-    };
-
-    if (child.type === Period) {
-        result = parsePeriod(child);
-    } else if (child.type === Project) {
-        const parsed = parseProject(child);
-        result.technologies = parsed.technologies;
-        result.projects = parsed.projects;
-    }
-
-    return result;
-};
-
-const TimelineContainer = ({ children = [], className = "", onParsed, filter }) => {
-
-    const [filteredChildren, setFilteredChildren] = useState([]);
+const TimelineContainer = ({ projects = [], className = "", onParsed, filter }) => {
+    const [filteredProjects, setFilteredProjects] = useState([]);
 
     useEffect(() => {
-        if (typeof (onParsed) !== "function") { return; }
-        const timeline = {
+        const newFilteredProjects = [];
+        const newFilterData = {
             technologies: [],
-            periods: [],
             projects: []
         };
 
-        children.forEach((child) => {
-            const childResult = parseChild(child);
-            timeline.technologies = [...new Set(timeline.technologies.concat(childResult.technologies))];
-            timeline.projects = timeline.projects.concat(childResult.projects);
-            timeline.periods = timeline.periods.concat(childResult.periods);
+        projects.forEach((project) => {
+            const { title, technologies } = project;
+            if (!title.toLowerCase().includes(filter.search?.toLowerCase?.()) && filter.search !== "") {
+                return;
+            }
+
+            if (!filter.technologies.every(filterTech => technologies.find(tech => filterTech === tech.name))) {
+                return;
+            }
+
+            newFilteredProjects.push(project);
+            newFilterData.technologies = newFilterData.technologies.concat(technologies.map(t => t.name));
+            newFilterData.projects.push(title);
         });
+        newFilterData.technologies = [...new Set(newFilterData.technologies)];
 
-        onParsed(timeline);
-    }, [children]);
+        if (typeof (onParsed) === "function") { onParsed(newFilterData); }
 
-    useEffect(() => {
-        
-    }, [children, filter]);
+        setFilteredProjects(newFilteredProjects.sort(sortFunctions[filter.sort]));
+
+    }, [projects, filter]);
 
     return (
         <div className={`flex flex-col ${className}`}>
-            {filteredChildren}
+            {filteredProjects.map((project) => {
+                const startDate = `${project.start.getFullYear()}${project.start.getMonth() === 0 ? "" : `-${project.start.getMonth()}`}`;
+                const endDate = project.end ? `${project.end.getFullYear()}${project.end.getMonth() === 0 ? "" : `-${project.end.getMonth()}`}` : "Heden";
+                return <Project
+                    {...project}
+                    key={project.title}
+                    text={project.short}
+                    image={project.shortImage}
+                    timestamp={`${startDate} → ${endDate}`}
+                    technologies={project.technologies.map(
+                        (tech, i) => <Technology key={i} {...tech} />
+                    )}
+                />;
+            })}
         </div>
     );
 };
 
-export default TimelineContainer;
+export default TimelineContainer;;;
