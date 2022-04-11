@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import createP5 from "p5";
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
-const Dots = () => {
+const Dots = ({ className = "" }) => {
   const canvas = useRef();
   const p5Canvas = useRef();
 
@@ -70,7 +70,7 @@ const Dots = () => {
   }, []);
 
   return (
-    <div ref={canvas} className="h-full w-full"></div>
+    <div ref={canvas} className={`h-full w-full ${className}`}></div>
   );
 };
 

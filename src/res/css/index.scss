@@ -2,22 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/Oswald-VariableFont_wght.ttf);
+}
+
+
 body,
 html {
     height: 100%;
     margin: 0;
 
-    font-family: fantasy, Impact, 'Arial Narrow Bold', sans-serif;
-}
-
-a {
-    color: white;
-}
-
-a:hover {
-    color: #7cad3e;
-}
-
-h1 {
-    color: white;
+    font-family: Oswald, Impact, Arial, sans-serif;
 }
