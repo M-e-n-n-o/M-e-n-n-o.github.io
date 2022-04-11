@@ -59,7 +59,7 @@ const ProjectsTimeline = () => {
             <header className="w-full bg-main text-center py-8">
                 <h2 className="text-[4rem] text-white">Mijn projecten</h2>
             </header>
-            <div className="flex gap-2 p-4 flex-col w-11/12 children:flex children:items-center children:justify-between children:flex-col children:gap-1 sm:children:flex-row sm:w-4/5 md:flex-row md:w-fit">
+            <div className="flex gap-2 p-8 flex-col w-11/12 children:flex children:items-center children:justify-between children:flex-col children:gap-1 sm:children:flex-row sm:w-4/5 md:flex-row md:w-fit">
                 <div>
                     <label>Zoek op naam</label>
                     <input

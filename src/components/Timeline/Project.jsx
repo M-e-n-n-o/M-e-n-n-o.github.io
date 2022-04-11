@@ -3,7 +3,7 @@ const Project = ({ title, text, image, timestamp, link, technologies = [], hide 
     return (
         <>
             {!hide && <>
-                <div className="w-full flex items-center justify-between gap-6 flex-col md:flex-row ">
+                <div className="w-full flex items-center justify-between gap-6 flex-col md:flex-row overflow-hidden">
                     <div className="flex flex-col gap-6 w-full md:flex-row">
                         <div className="w-full md:w-2/5 lg:w-1/4">
                             <div className="text-[2rem] text-main">{title}</div>
