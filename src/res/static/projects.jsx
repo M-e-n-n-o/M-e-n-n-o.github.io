@@ -24,8 +24,8 @@ export default [
         </>,
         description: "",
         shortImage: ByteCatImg,
-        link: "https://www.opengl.org/",
-        linkLabel: "Download Source",
+        link: "https://github.com/CodingWithMenno/ByteCat",
+        linkLabel: "Bekijk het op Github",
         technologies: [
             { name: "C++" },
             { name: "OpenGL", link: "https://www.opengl.org/" },
@@ -69,8 +69,8 @@ export default [
             </ul>
         </>,
         shortImage: OpenGLGameImg,
-        link: "https://www.opengl.org/",
-        linkLabel: "Download Source",
+        link: "https://github.com/CodingWithMenno/3DGame",
+        linkLabel: "Bekijk de source",
         technologies: [
             { name: "Java" },
             { name: "OpenGL", link: "https://www.opengl.org/" },
@@ -87,8 +87,8 @@ export default [
             Daarnaast kan je in deze app gemakkelijk routes invullen door middel van de ingebouwde OpenStreetMap API.
         </>,
         shortImage: FitTrackerImg,
-        link: "https://www.opengl.org/",
-        linkLabel: "Download Source",
+        link: "https://github.com/CodingWithMenno/GeoFencingApp",
+        linkLabel: "Bekijk op Github",
         technologies: [
             { name: "OpenStreetMap API", link: "https://www.openstreetmap.org" },
             { name: "Mobile" },
@@ -105,8 +105,8 @@ export default [
             De app maakt gebruik van GPS om de snelheid te berekenen van de gebruiker en Bluetooth om te communiceren met de Arduino.
         </>,
         shortImage: EStepImg,
-        link: "https://www.opengl.org/",
-        linkLabel: "Download Source",
+        link: "https://github.com/CodingWithMenno/ElektrischeStep",
+        linkLabel: "Bekijk de sourcecode",
         technologies: [
             { name: "Arduino", link: "https://www.arduino.cc/" },
             { name: "Mobile" },
@@ -123,8 +123,8 @@ export default [
             Deze bot is gemaakt in Java en maakt gebruik van een API om te verbinden met Discord.<br />
             De bot heeft allemaal leuke commands + elke gebruiker van de bot kan een eigen playlist aanmaken met liedjes die de bot altijd onthoud.
         </>,
-        link: "https://www.opengl.org/",
-        linkLabel: "Download Source",
+        link: "https://github.com/CodingWithMenno/discordBot",
+        linkLabel: "Bekijk op Github",
         technologies: [
             { name: "Java" },
             { name: "Discord" }
@@ -141,8 +141,8 @@ export default [
             Daarnaast kan je een game starten samen met een andere player en tegen hem strijden in een simpele maar toch leuke platformer.
         </>,
         shortImage: OnlinePlatformer,
-        link: "https://www.opengl.org/",
-        linkLabel: "Download Source",
+        link: "https://drive.google.com/file/d/14CC6SVxv3TZe4IAYSq6mjJqU0dlE1vuU/view?usp=sharing",
+        linkLabel: "Download",
         technologies: [
             { name: "Java" },
             { name: "No engine" }
@@ -159,8 +159,8 @@ export default [
             Daarnaast heeft de game ook een paar secrets in de map en als je de game uitspeeld.
         </>,
         shortImage: GettinOverItImg,
-        link: "https://www.opengl.org/",
-        linkLabel: "Download Source",
+        link: "https://drive.google.com/open?id=1ITomFEyggwv_WgbSMc6KsfMaIz0QTNFB",
+        linkLabel: "Download de source",
         technologies: [
             { name: "Java" },
             { name: "No engine" }
@@ -177,8 +177,8 @@ export default [
             Al haal je het laatste level is er een leuke verrassing.
         </>,
         shortImage: DinosImg,
-        link: "https://www.opengl.org/",
-        linkLabel: "Download Source",
+        link: "https://drive.google.com/file/d/1VgZ6Ga8cBX992wnaTddUaUGykjNG4g5a/view?usp=sharing",
+        linkLabel: "Download source",
         technologies: [
             { name: "Java" },
         ]
