@@ -27,8 +27,6 @@ const Dots = ({ className = "" }) => {
 
       p5.draw = () => {
         p5.clear();
-        p5.fill('rgb(23,48,66)');
-        p5.stroke('rgb(23,48,66)');
         p5.strokeWeight(4);
 
         const { width, height } = p5;
@@ -39,7 +37,6 @@ const Dots = ({ className = "" }) => {
           pos.x += vel.x;
           pos.y += vel.y;
 
-          //check for collisions
           if (pos.x > width || pos.x < 0) {
             pos.x = clamp(pos.x, 0, width);
             vel.x = -vel.x;
@@ -50,8 +47,12 @@ const Dots = ({ className = "" }) => {
             vel.y = -vel.y;
           }
 
-          //draw the lines and circles
+          p5.fill("rgb(18, 38, 53)");
+          p5.stroke("rgb(18, 38, 53)");
           p5.circle(pos.x, pos.y, dotRadius);
+
+          p5.fill("rgb(23,48,66)");
+          p5.stroke("rgb(23,48,66)");
           const nextDot = dots[i < totalDots - 1 ? i + 1 : 0];
           p5.line(pos.x, pos.y, nextDot.pos.x, nextDot.pos.y);
         });
