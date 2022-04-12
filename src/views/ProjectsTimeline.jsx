@@ -1,7 +1,6 @@
-import React, { useReducer, useState } from 'react';
+import React, { useEffect, useReducer, useState } from 'react';
 import Timeline from "../components/Timeline/index";
 import Select from 'react-select';
-import projects from "../res/static/projects";
 import Header from "../components/Header";
 
 const initialFilter = {
@@ -35,6 +34,11 @@ const toSelect = (array) => array.map((item) => {
 });
 
 const ProjectsTimeline = () => {
+    const [projects, setProjects] = useState({
+        data: [],
+        loaded: false,
+        error: false
+    });
     const [filterOptions, setFilterOptions] = useState({
         technologies: [],
         projects: [],
@@ -54,6 +58,23 @@ const ProjectsTimeline = () => {
                 return state;
         }
     }, initialFilter);
+
+    useEffect(() => {
+        import("../res/static/projects").then((_projects) => {
+            setProjects({
+                data: _projects.default,
+                loaded: true,
+                error: false
+            });
+        }).catch(() => {
+            setProjects({
+                data: [],
+                loaded: true,
+                error: true
+            });
+        });
+
+    }, []);
 
     return (
         <div className="flex flex-col items-center">
@@ -104,7 +125,7 @@ const ProjectsTimeline = () => {
                     />
                 </div>
             </div>
-            <Timeline
+            {(projects.loaded && !projects.error) && < Timeline
                 className="p-8 items-center"
                 filter={filter}
                 onParsed={timeline => setFilterOptions({
@@ -112,8 +133,11 @@ const ProjectsTimeline = () => {
                     projects: timeline.projects,
                     loading: false
                 })}
-                projects={projects}
-            />
+                projects={projects.data}
+            />}
+            {(projects.loaded && projects.error) && <div className="text-red-700 text-[2rem] md:text-[3rem] lg:text-[4rem] p-4 text-center">
+                Er is iets mis gegaan met het laden van de projecten
+            </div>}
         </div >
     );
 };

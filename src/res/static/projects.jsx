@@ -1,18 +1,11 @@
-const giveIds = (list) => {
-    list.forEach((item, id) => {
-        item.id = id + 1;
-    });
-    return list;
-};
-
-import ByteCatImg from "../images/ByteCat.jpg";
-import OpenGLGameImg from "../images/3DOpenGLGame.png";
-import DinosImg from "../images/Dinos.png";
-import EStepImg from "../images/EStep.jpg";
-import FitTrackerImg from "../images/FitTracker.jpg";
-import OldWebsiteImg from "../images/OldWebsite.png";
-import GettinOverItImg from "../images/GOI.png";
-import OnlinePlatformer from "../images/Platformer.png";
+import ByteCatImg from "../images/ByteCat.webp";
+import OpenGLGameImg from "../images/3DOpenGLGame.webp";
+import DinosImg from "../images/Dinos.webp";
+import EStepImg from "../images/EStep.webp";
+import FitTrackerImg from "../images/FitTracker.webp";
+import OldWebsiteImg from "../images/OldWebsite.webp";
+import GettinOverItImg from "../images/GOI.webp";
+import OnlinePlatformer from "../images/Platformer.webp";
 
 /*
 Note: 
@@ -20,7 +13,7 @@ technologies, link, linklabel are optional.
 If you exclude the end date it will assume that the project is ongoing
 */
 
-export default giveIds([
+export default [
 
     {
         start: new Date("2021"),
@@ -190,4 +183,4 @@ export default giveIds([
             { name: "Java" },
         ]
     },
-]);
+];
