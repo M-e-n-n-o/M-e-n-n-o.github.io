@@ -5,8 +5,8 @@ import Technology from "./Technology";
 const sortFunctions = {
     "Datum ↑": (projectA, projectB) => (projectA.end ?? new Date(Date.now())) > (projectB.end ?? new Date(Date.now() - 1)),
     "Datum ↓": (projectA, projectB) => (projectA.end ?? new Date(Date.now())) < (projectB.end ?? new Date(Date.now() - 1)),
-    "Naam ABC": (projectA, projectB) => projectA.title.toLowerCase() < projectB.title.toLowerCase(),
-    "Naam CBA": (projectA, projectB) => projectA.title.toLowerCase() > projectB.title.toLowerCase()
+    "Naam ABC": (projectA, projectB) => projectA.title.toLowerCase() > projectB.title.toLowerCase(),
+    "Naam CBA": (projectA, projectB) => projectA.title.toLowerCase() < projectB.title.toLowerCase()
 };
 
 const TimelineContainer = ({ projects = [], className = "", onParsed, filter }) => {
