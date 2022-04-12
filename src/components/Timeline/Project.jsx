@@ -1,5 +1,5 @@
 import React from 'react';
-import IdCardImg from "../../res/images/id-card.svg?component";
+import LinkImg from "../../res/images/link.svg?component";
 import Link from "../Link";
 
 const Project = ({ title, text, image, timestamp, technologies = [], link, linkLabel, hide = false }) => {
@@ -15,7 +15,7 @@ const Project = ({ title, text, image, timestamp, technologies = [], link, linkL
                             </div>
                             {link && <Link link={link} className="flex justify-between items-center max-h-10 w-2/3 sm:w-fit md:w-full">
                                 <span>{linkLabel ?? "Github page"}</span>
-                                <IdCardImg fill="currentColor" className="h-[1em]" />
+                                <LinkImg fill="currentColor" className="h-[1em]" />
                             </Link>}
                         </div>
 

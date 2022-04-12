@@ -5,10 +5,10 @@
   "homepage": "https://codingwithmenno.github.io/",
   "author": "CodingWithMenno",
   "scripts": {
-    "start": "npm run dev",
+    "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
+    "predeploy": "vite build",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
