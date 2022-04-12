@@ -1,7 +1,6 @@
 const giveIds = (list) => {
     list.forEach((item, id) => {
         item.id = id + 1;
-        item.link = `/?r=/projects/${id + 1}`;
     });
     return list;
 };
@@ -15,6 +14,11 @@ import OldWebsiteImg from "../images/OldWebsite.png";
 import GettinOverItImg from "../images/GOI.png";
 import OnlinePlatformer from "../images/Platformer.png";
 
+/*
+Note: 
+technologies, link, linklabel are optional.
+If you exclude the end date it will assume that the project is ongoing
+*/
 
 export default giveIds([
 
@@ -27,6 +31,8 @@ export default giveIds([
         </>,
         description: "",
         shortImage: ByteCatImg,
+        link: "https://www.opengl.org/",
+        linkLabel: "Download Source",
         technologies: [
             { name: "C++" },
             { name: "OpenGL", link: "https://www.opengl.org/" },
@@ -70,6 +76,8 @@ export default giveIds([
             </ul>
         </>,
         shortImage: OpenGLGameImg,
+        link: "https://www.opengl.org/",
+        linkLabel: "Download Source",
         technologies: [
             { name: "Java" },
             { name: "OpenGL", link: "https://www.opengl.org/" },
@@ -86,6 +94,8 @@ export default giveIds([
             Daarnaast kan je in deze app gemakkelijk routes invullen door middel van de ingebouwde OpenStreetMap API.
         </>,
         shortImage: FitTrackerImg,
+        link: "https://www.opengl.org/",
+        linkLabel: "Download Source",
         technologies: [
             { name: "OpenStreetMap API", link: "https://www.openstreetmap.org" },
             { name: "Mobile" },
@@ -102,6 +112,8 @@ export default giveIds([
             De app maakt gebruik van GPS om de snelheid te berekenen van de gebruiker en Bluetooth om te communiceren met de Arduino.
         </>,
         shortImage: EStepImg,
+        link: "https://www.opengl.org/",
+        linkLabel: "Download Source",
         technologies: [
             { name: "Arduino", link: "https://www.arduino.cc/" },
             { name: "Mobile" },
@@ -118,6 +130,8 @@ export default giveIds([
             Deze bot is gemaakt in Java en maakt gebruik van een API om te verbinden met Discord.<br />
             De bot heeft allemaal leuke commands + elke gebruiker van de bot kan een eigen playlist aanmaken met liedjes die de bot altijd onthoud.
         </>,
+        link: "https://www.opengl.org/",
+        linkLabel: "Download Source",
         technologies: [
             { name: "Java" },
             { name: "Discord" }
@@ -134,6 +148,8 @@ export default giveIds([
             Daarnaast kan je een game starten samen met een andere player en tegen hem strijden in een simpele maar toch leuke platformer.
         </>,
         shortImage: OnlinePlatformer,
+        link: "https://www.opengl.org/",
+        linkLabel: "Download Source",
         technologies: [
             { name: "Java" },
             { name: "No engine" }
@@ -150,6 +166,8 @@ export default giveIds([
             Daarnaast heeft de game ook een paar secrets in de map en als je de game uitspeeld.
         </>,
         shortImage: GettinOverItImg,
+        link: "https://www.opengl.org/",
+        linkLabel: "Download Source",
         technologies: [
             { name: "Java" },
             { name: "No engine" }
@@ -166,6 +184,8 @@ export default giveIds([
             Al haal je het laatste level is er een leuke verrassing.
         </>,
         shortImage: DinosImg,
+        link: "https://www.opengl.org/",
+        linkLabel: "Download Source",
         technologies: [
             { name: "Java" },
         ]

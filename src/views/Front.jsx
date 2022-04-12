@@ -4,6 +4,7 @@ import LinkedinImg from "../res/images/linkedin.svg?component";
 import GithubImg from "../res/images/github.svg?component";
 import IdCardImg from "../res/images/id-card.svg?component";
 import MennoImg from "../res/images/menno.webp";
+import CvPDF from "../res/static/CV.pdf";
 import "../res/css/views/Front.scss";
 
 const FrontIcon = ({ text, href, ...props }) => {
@@ -23,12 +24,12 @@ const Front = () => {
             <div className="min-h-screen flex flex-col justify-between items-center front-container gap-8">
                 <div className="z-10 py-3 text-white flex-1 flex flex-col justify-center items-center md:w-3/4 lg:flex-row xl:w-4/6">
                     <div className="flex-1 flex justify-center">
-                        <div>
-                            <div className="text-[1.8rem]">Hallo, ik ben</div>
-                            <a className="hover:text-main-hover pl-4 block text-[7rem] sm:text-[9rem] xl:text-[10rem]" href="/src/res/files/CV.pdf" target="_blank" >
+                        <h1>
+                            <p className="text-[1.8rem] m-0">Hallo, ik ben</p>
+                            <a className="hover:text-main-hover pl-4 block text-[7rem] sm:text-[9rem] xl:text-[10rem]" href={CvPDF} target="_blank" >
                                 Menno
                             </a>
-                        </div>
+                        </h1>
                     </div>
                     <div className="flex-1 flex justify-center">
                         <div className="flex items-center justify-center w-1/2 py-4 md:p-0 md:max-w-[50%] md:w-fit md:max-h-[60vh]">
@@ -53,7 +54,7 @@ const Front = () => {
                         text="Github"
                     />
                     <FrontIcon
-                        href="/src/res/files/CV.pdf"
+                        href={CvPDF}
                         icon={IdCardImg}
                         text="CV"
                     />
