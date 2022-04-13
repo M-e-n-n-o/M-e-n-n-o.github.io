@@ -42,7 +42,7 @@ const Front = () => {
                     </div>
                 </div>
 
-                <div className="z-10 text-[1.8rem] text-white hover:children:text-main-hover py-4 w-full flex items-center gap-2 flex-col sm:flex-row sm:justify-around " >
+                <div className="z-10 text-[1.8rem] text-white hover:children:text-main-hover py-8 w-full flex items-center gap-2 flex-col sm:flex-row sm:justify-around " >
                     <FrontIcon
                         href="https://www.linkedin.com/in/menno-bil-055100201/"
                         icon={LinkedinImg}
