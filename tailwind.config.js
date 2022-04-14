@@ -13,10 +13,10 @@ module.exports = {
 
       colors: {
         main: "#247e00",
-        "main-hover": "#39cb00",
+        "main-hover": "#2bbe26",
         accent: "#195a00",
-        call: "#6301be",
-        "call-hover": "#b260ff"
+        call: "#173042",
+        "call-hover": "#236477"
       }
     },
   },
