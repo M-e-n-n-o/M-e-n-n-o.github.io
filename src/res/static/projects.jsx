@@ -22,7 +22,6 @@ export default [
             Omdat ik al meerdere keren opnieuw een basis renderer, shader en zulke dingen heb moeten maken elke keer als ik iets in OpenGL wilde doen.<br />
             Ik heb besloten om een basis opzet te maken voor elke game/applicatie die iets grafisch nodig heeft. Om deze reden ben ik begonnen met het maken van mijn eigen game engine: ByteCat.
         </>,
-        description: "",
         shortImage: ByteCatImg,
         link: "https://github.com/CodingWithMenno/ByteCat",
         linkLabel: "Bekijk het op Github",
