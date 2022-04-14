@@ -3,6 +3,7 @@ import Front from "./views/Front";
 import ProjectsTimeline from "./views/ProjectsTimeline";
 import "./res/css/index.scss";
 import AboutMe from "./views/AboutMe";
+import Footer from "./views/Footer";
 
 
 const container = document.getElementById("react-root");
@@ -13,6 +14,7 @@ const Root = () => {
         <Front />
         <AboutMe />
         <ProjectsTimeline />
+        <Footer />
     </>;
 };
 
