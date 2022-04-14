@@ -4,6 +4,13 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
+
+      screens: {
+        '2xl': "1500px",
+        'wide': "2000px",
+        'putin': "2500px"
+      },
+
       colors: {
         main: "#247e00",
         "main-hover": "#39cb00",
