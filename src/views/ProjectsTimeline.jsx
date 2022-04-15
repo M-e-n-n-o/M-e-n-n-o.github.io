@@ -6,7 +6,7 @@ import Header from "../components/Header";
 const initialFilter = {
     technologies: [],
     projects: [],
-    sort: "Datum ↓",
+    sort: "Date ↓",
     search: ""
 };
 
@@ -79,7 +79,7 @@ const ProjectsTimeline = () => {
     return (
         <div className="flex flex-col items-center">
             <Header>
-                <h2 className="text-[4rem] text-white">Mijn projecten</h2>
+                <h2 className="text-[4rem] text-white">My projects</h2>
             </Header>
             <div className="flex gap-2 md:gap-4 p-8 flex-col w-11/12 children:flex children:items-center children:justify-between children:flex-col children:gap-1 sm:children:flex-row sm:w-4/5 md:flex-row md:w-fit">
                 <div>
@@ -116,10 +116,10 @@ const ProjectsTimeline = () => {
                         onChange={date => filterDispatch({ type: "SORT_CHANGED", payload: date.value })}
                         value={{ label: filter.sort, value: filter.sort }}
                         options={[
-                            { label: "Datum ↓", value: "Datum ↓" },
-                            { label: "Datum ↑", value: "Datum ↑" },
-                            { label: "Naam ABC", value: "Naam ABC" },
-                            { label: "Naam CBA", value: "Naam CBA" }
+                            { label: "Date ↓", value: "Date ↓" },
+                            { label: "Date ↑", value: "Date ↑" },
+                            { label: "Name ABC", value: "Name ABC" },
+                            { label: "Name CBA", value: "Name CBA" }
                         ]}
                         isLoading={filterOptions.loading}
                     />

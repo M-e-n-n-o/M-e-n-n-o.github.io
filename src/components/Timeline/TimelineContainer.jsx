@@ -3,10 +3,10 @@ import Project from "./Project";
 import Technology from "./Technology";
 
 const sortFunctions = {
-    "Datum ↑": (pA, pB) => (pA.end ? new Date(pA.end.year, pA.end.month ? pA.end.month - 1 : 0) : new Date(Date.now())) <= (pB.end ? new Date(pB.end.year, pB.end.month ? pB.end.month - 1 : 0) : new Date(Date.now())),
-    "Datum ↓": (pA, pB) => (pA.end ? new Date(pA.end.year, pA.end.month ? pA.end.month - 1 : 0) : new Date(Date.now())) >= (pB.end ? new Date(pB.end.year, pB.end.month ? pB.end.month - 1 : 0) : new Date(Date.now())),
-    "Naam ABC": (pA, pB) => pA.title.toLowerCase() < pB.title.toLowerCase(),
-    "Naam CBA": (pA, pB) => pA.title.toLowerCase() > pB.title.toLowerCase()
+    "Date ↑": (pA, pB) => (pA.end ? new Date(pA.end.year, pA.end.month ? pA.end.month - 1 : 0) : new Date(Date.now())) <= (pB.end ? new Date(pB.end.year, pB.end.month ? pB.end.month - 1 : 0) : new Date(Date.now())),
+    "Date ↓": (pA, pB) => (pA.end ? new Date(pA.end.year, pA.end.month ? pA.end.month - 1 : 0) : new Date(Date.now())) >= (pB.end ? new Date(pB.end.year, pB.end.month ? pB.end.month - 1 : 0) : new Date(Date.now())),
+    "Name ABC": (pA, pB) => pA.title.toLowerCase() < pB.title.toLowerCase(),
+    "Name CBA": (pA, pB) => pA.title.toLowerCase() > pB.title.toLowerCase()
 };
 
 function sort(arr, compare) {
@@ -66,7 +66,7 @@ const TimelineContainer = ({ projects = [], className = "", onParsed, filter }) 
             {filteredProjects.map((project) => {
 
                 const startDate = `${project.start.year}${project.start.month && `-${project.start.month}`}`;
-                const endDate = project.end ? `${project.end.year}${project.end.month && `-${project.end.month}`}` : "Heden";
+                const endDate = project.end ? `${project.end.year}${project.end.month && `-${project.end.month}`}` : "Present";
 
                 return <Project
                     {...project}

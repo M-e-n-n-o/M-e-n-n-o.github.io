@@ -1,8 +1,7 @@
-import ByteCatImg from "../images/ByteCat.webp";
+import ByteCatGif from "../images/Mandelbrot.gif";
 import OpenGLGameImg from "../images/3DOpenGLGame.webp";
 import DinosImg from "../images/Dinos.webp";
 import EStepImg from "../images/EStep.webp";
-import FitTrackerImg from "../images/FitTracker.webp";
 import OldWebsiteImg from "../images/OldWebsite.webp";
 import GettinOverItImg from "../images/GOI.webp";
 import OnlinePlatformer from "../images/Platformer.webp";
@@ -22,7 +21,7 @@ export default [
             Because I've had to recreate renderers, shaders, and other graphics component several times before every time I wanted to do something in OpenGL.<br />
             I decided to make a basic setup for every game/application that needs something with graphics. For this reason, I started making my own graphics engine: ByteCat.
         </>,
-        shortImage: ByteCatImg,
+        shortImage: ByteCatGif,
         link: "https://github.com/CodingWithMenno/ByteCat",
         linkLabel: "Take a look at the Github",
         technologies: [

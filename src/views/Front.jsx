@@ -25,7 +25,7 @@ const Front = () => {
                 <div className="z-10 py-3 text-white flex-1 flex flex-col justify-center items-center md:w-3/4 lg:flex-row xl:w-4/6">
                     <div className="flex-1 flex justify-center">
                         <h1>
-                            <p className="text-[1.8rem] putin:text-[2rem] m-0">Hallo, ik ben</p>
+                            <p className="text-[1.8rem] putin:text-[2rem] m-0">Hello, I am</p>
                             <a className="hover:text-main-hover pl-4 block text-[7rem] sm:text-[9rem] xl:text-[10rem] putin:text-[12rem]" href={CvPDF} target="_blank" >
                                 Menno
                             </a>
