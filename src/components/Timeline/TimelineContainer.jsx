@@ -47,7 +47,7 @@ const TimelineContainer = ({ projects = [], className = "", onParsed, filter }) 
 
                 const startDate = `${project.start.getFullYear()}${`-${project.start.getMonth() + 1}`}`;
                 const endDate = project.end ? `${project.end.getFullYear()}${`-${project.end.getMonth() + 1}`}` : "Heden";
-                
+
                 return <Project
                     {...project}
                     key={project.title}
