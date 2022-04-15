@@ -135,9 +135,9 @@ export default [
         end: { year: 2020, month: 3 },
         title: "Getting over it",
         short: <>
-            Deze game is gebaseerd op de game: Getting over it with Bennett Foddy. <br />
-            Alleen heeft mijn versie een paar leuke extra features zoals een world maker, waar je je eigen wereld kan bouwen en er in spelen. <br />
-            Daarnaast heeft de game ook een paar secrets in de map en als je de game uitspeeld.
+            This game is based on the popular indie game "Getting over it with Bennett Foddy" but with a twist.<br />
+            This game features a creative world editor where you can create the world of your dreams!<br />
+            Besides this there are several hidden secrets placed all around the map.
         </>,
         shortImage: GettinOverItImg,
         link: "https://drive.google.com/open?id=1ITomFEyggwv_WgbSMc6KsfMaIz0QTNFB",
@@ -152,15 +152,15 @@ export default [
         end: { year: 2020, month: 1 },
         title: "Google Dino Game",
         short: <>
-            Dit is de eerste game die ik ooit heb gemaakt. De game is gebaseerd op de hidden dino game van google. <br />
-            Deze game is vanaf niks opgebouwd in Java. <br />
-            Al haal je het laatste level is er een leuke verrassing.
+            This is the first game I ever created. It is based on the hidden dino game in Google Chrome.<br />
+            When completing the final level, there is a hidden secret.
         </>,
         shortImage: DinosImg,
         link: "https://drive.google.com/file/d/1VgZ6Ga8cBX992wnaTddUaUGykjNG4g5a/view?usp=sharing",
         linkLabel: "See the source code",
         technologies: [
             { name: "Java" },
+            { name: "Java AWT" }
         ]
     },
 ];
