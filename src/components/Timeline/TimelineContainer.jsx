@@ -3,29 +3,30 @@ import Project from "./Project";
 import Technology from "./Technology";
 
 const sortFunctions = {
-    "Datum ↑": (projectA, projectB) => (projectA.end ?? new Date(Date.now())) > (projectB.end ?? new Date(Date.now() - 1)),
-    "Datum ↓": (projectA, projectB) => (projectA.end ?? new Date(Date.now())) < (projectB.end ?? new Date(Date.now() - 1)),
-    "Naam ABC": (projectA, projectB) => projectA.title.toLowerCase() > projectB.title.toLowerCase(),
-    "Naam CBA": (projectA, projectB) => projectA.title.toLowerCase() < projectB.title.toLowerCase()
+    "Datum ↑": (projectA, projectB) => (projectA.end ?? new Date(Date.now())) <= (projectB.end ?? new Date(Date.now())),
+    "Datum ↓": (projectA, projectB) => (projectA.end ?? new Date(Date.now())) >= (projectB.end ?? new Date(Date.now())),
+    "Naam ABC": (projectA, projectB) => projectA.title.toLowerCase() < projectB.title.toLowerCase(),
+    "Naam CBA": (projectA, projectB) => projectA.title.toLowerCase() > projectB.title.toLowerCase()
 };
 
-function swap(arr, firstIndex, secondIndex) {
-    var temp = arr[firstIndex];
-    arr[firstIndex] = arr[secondIndex];
-    arr[secondIndex] = temp;
-}
-
-function bubbleSortAlgo(arraaytest, sortFunction) {
-    var len = arraaytest.length,
-        i, j, stop;
-    for (i = 0; i < len; i++) {
-        for (j = 0, stop = len - i; j < stop; j++) {
-            if (sortFunction(arraaytest[j], arraaytest[j + 1])) {
-                swap(arraaytest, j, j + 1);
+function sort(arr, compare) {
+    if (arr.length <= 1) {
+        return arr;
+    } else {
+        var left = [];
+        var right = [];
+        var newArray = [];
+        var pivot = arr.pop();
+        var length = arr.length;
+        for (var i = 0; i < length; i++) {
+            if (compare(arr[i], pivot)) {
+                left.push(arr[i]);
+            } else {
+                right.push(arr[i]);
             }
         }
+        return newArray.concat(sort(left, compare), pivot, sort(right, compare));
     }
-    return arraaytest;
 }
 
 const TimelineContainer = ({ projects = [], className = "", onParsed, filter }) => {
@@ -56,7 +57,7 @@ const TimelineContainer = ({ projects = [], className = "", onParsed, filter }) 
 
         if (typeof (onParsed) === "function") { onParsed(newFilterData); }
 
-        setFilteredProjects(bubbleSortAlgo(newFilteredProjects, sortFunctions[filter.sort]));
+        setFilteredProjects(sort(newFilteredProjects, sortFunctions[filter.sort]));
         //setFilteredProjects(newFilteredProjects.sort(sortFunctions[filter.sort]));
 
     }, [projects, filter]);
