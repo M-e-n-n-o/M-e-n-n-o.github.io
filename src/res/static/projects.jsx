@@ -33,8 +33,8 @@ export default [
     {
         start: { year: 2021, month: 4 },
         end: { year: 2021, month: 5 },
-        title: "Mijn (oude) website",
-        short: <>Ik ben begonnen met het leren van web-development. Op mijn website maak ik gebruik van HTML5, CSS en JavaScript.</>,
+        title: "My (old) website",
+        short: <>I started learning web development :O</>,
         shortImage: OldWebsiteImg,
         technologies: [
             { name: "Web" },
@@ -47,7 +47,7 @@ export default [
     {
         start: { year: 2020, month: 12 },
         end: { year: 2021, month: 3 },
-        title: "3D OpenGL game",
+        title: "Java OpenGL game",
         short: <>
             This is my first good application created using OpenGL. This app is created in Java with LWJGL which is a wrapper for OpenGL<br />
             which makes it possible to use Java to communicate with the Graphics Card. This application has the following features:
@@ -78,7 +78,7 @@ export default [
     {
         start: { year: 2020, month: 10 },
         end: { year: 2020, month: 12 },
-        title: "Elektrische Step",
+        title: "Electric Scooter",
         short: <>
             This application features software for an arduino which controlls a motor mounted on a scooter. This arduino can then communicate<br />
             using Bluetooth with an Android app which can show statistics about the motor, control the motor and calculate the speed using GPS.
