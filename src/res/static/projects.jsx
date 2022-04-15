@@ -16,8 +16,8 @@ If you exclude the end date it will assume that the project is ongoing
 export default [
 
     {
-        start: new Date(2021, 4),
-        title: "C++ graphics engine: ByteCat",
+        start: { year: 2021, month: 4 },
+        title: "C++ game engine: ByteCat",
         short: <>
             Because I've had to recreate renderers, shaders, and other graphics component several times before every time I wanted to do something in OpenGL.<br />
             I decided to make a basic setup for every game/application that needs something with graphics. For this reason, I started making my own graphics engine: ByteCat.
@@ -32,10 +32,10 @@ export default [
     },
 
     {
-        start: new Date(2021, 4),
-        end: new Date("2021-5"),
-        title: "My (old) website",
-        short: <>I started learning web development :O</>,
+        start: { year: 2021, month: 4 },
+        end: { year: 2021, month: 5 },
+        title: "Mijn (oude) website",
+        short: <>Ik ben begonnen met het leren van web-development. Op mijn website maak ik gebruik van HTML5, CSS en JavaScript.</>,
         shortImage: OldWebsiteImg,
         technologies: [
             { name: "Web" },
@@ -46,9 +46,9 @@ export default [
     },
 
     {
-        start: new Date(2020, 12),
-        end: new Date(2021, 3),
-        title: "Java OpenGL game",
+        start: { year: 2020, month: 12 },
+        end: { year: 2021, month: 3 },
+        title: "3D OpenGL game",
         short: <>
             This is my first good application created using OpenGL. This app is created in Java with LWJGL which is a wrapper for OpenGL<br />
             which makes it possible to use Java to communicate with the Graphics Card. This application has the following features:
@@ -77,8 +77,8 @@ export default [
     },
 
     {
-        start: new Date(2020, 10),
-        end: new Date(2020, 12),
+        start: { year: 2020, month: 10 },
+        end: { year: 2020, month: 12 },
         title: "Elektrische Step",
         short: <>
             This application features software for an arduino which controlls a motor mounted on a scooter. This arduino can then communicate<br />
@@ -94,8 +94,8 @@ export default [
     },
 
     {
-        start: new Date(2020, 9),
-        end: new Date(2020, 10),
+        start: { year: 2020, month: 9 },
+        end: { year: 2020, month: 10 },
         title: "Discord Bot",
         short: <>
             This chatbot is made using Java and uses an API to connect to the services of Discord. <br />
@@ -111,8 +111,8 @@ export default [
     },
 
     {
-        start: new Date(2020, 4),
-        end: new Date("2020-6"),
+        start: { year: 2020, month: 4 },
+        end: { year: 2020, month: 6 },
         title: "Online platformer",
         short: <>
             This app is made using JavaFX and is my first online application!<br />
@@ -131,8 +131,8 @@ export default [
     },
 
     {
-        start: new Date(2020, 1),
-        end: new Date("2020-3"),
+        start: { year: 2020, month: 1 },
+        end: { year: 2020, month: 3 },
         title: "Getting over it",
         short: <>
             Deze game is gebaseerd op de game: Getting over it with Bennett Foddy. <br />
@@ -148,8 +148,8 @@ export default [
     },
 
     {
-        start: new Date(2019, 11),
-        end: new Date(2020, 1),
+        start: { year: 2019, month: 11 },
+        end: { year: 2020, month: 1 },
         title: "Google Dino Game",
         short: <>
             Dit is de eerste game die ik ooit heb gemaakt. De game is gebaseerd op de hidden dino game van google. <br />

@@ -3,10 +3,10 @@ import Project from "./Project";
 import Technology from "./Technology";
 
 const sortFunctions = {
-    "Datum ↑": (projectA, projectB) => (projectA.end ?? new Date(Date.now())) <= (projectB.end ?? new Date(Date.now())),
-    "Datum ↓": (projectA, projectB) => (projectA.end ?? new Date(Date.now())) >= (projectB.end ?? new Date(Date.now())),
-    "Naam ABC": (projectA, projectB) => projectA.title.toLowerCase() < projectB.title.toLowerCase(),
-    "Naam CBA": (projectA, projectB) => projectA.title.toLowerCase() > projectB.title.toLowerCase()
+    "Datum ↑": (pA, pB) => (pA.end ? new Date(pA.end.year, pA.end.month ? pA.end.month - 1 : 0) : new Date(Date.now())) <= (pB.end ? new Date(pB.end.year, pB.end.month ? pB.end.month - 1 : 0) : new Date(Date.now())),
+    "Datum ↓": (pA, pB) => (pA.end ? new Date(pA.end.year, pA.end.month ? pA.end.month - 1 : 0) : new Date(Date.now())) >= (pB.end ? new Date(pB.end.year, pB.end.month ? pB.end.month - 1 : 0) : new Date(Date.now())),
+    "Naam ABC": (pA, pB) => pA.title.toLowerCase() < pB.title.toLowerCase(),
+    "Naam CBA": (pA, pB) => pA.title.toLowerCase() > pB.title.toLowerCase()
 };
 
 function sort(arr, compare) {
@@ -65,8 +65,8 @@ const TimelineContainer = ({ projects = [], className = "", onParsed, filter }) 
         <div className={`flex flex-col ${className}`}>
             {filteredProjects.map((project) => {
 
-                const startDate = `${project.start.getFullYear()}${`-${project.start.getMonth()}`}`;
-                const endDate = project.end ? `${project.end.getFullYear()}${`-${project.end.getMonth()}`}` : "Heden";
+                const startDate = `${project.start.year}${project.start.month && `-${project.start.month}`}`;
+                const endDate = project.end ? `${project.end.year}${project.end.month && `-${project.end.month}`}` : "Heden";
 
                 return <Project
                     {...project}
