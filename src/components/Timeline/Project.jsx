@@ -23,7 +23,7 @@ const Project = ({ title, text, image, timestamp, technologies = [], link, linkL
                         {image && <div className="max-h-96 md:row-span-2 flex justify-center items-center overflow-hidden pl-2">
                             <img
                                 loading="lazy"
-                                className="object-contain w-1/3 md:w-auto max-w-full max-h-80 md:max-h-full rounded-md"
+                                className="object-contain w-3/5 md:w-auto max-w-full max-h-80 md:max-h-full rounded-md"
                                 src={image}
                             />
                         </div>}

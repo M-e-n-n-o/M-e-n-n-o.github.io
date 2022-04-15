@@ -58,7 +58,6 @@ const TimelineContainer = ({ projects = [], className = "", onParsed, filter }) 
         if (typeof (onParsed) === "function") { onParsed(newFilterData); }
 
         setFilteredProjects(sort(newFilteredProjects, sortFunctions[filter.sort]));
-        //setFilteredProjects(newFilteredProjects.sort(sortFunctions[filter.sort]));
 
     }, [projects, filter]);
 
@@ -66,8 +65,8 @@ const TimelineContainer = ({ projects = [], className = "", onParsed, filter }) 
         <div className={`flex flex-col ${className}`}>
             {filteredProjects.map((project) => {
 
-                const startDate = `${project.start.getFullYear()}${`-${project.start.getMonth() + 1}`}`;
-                const endDate = project.end ? `${project.end.getFullYear()}${`-${project.end.getMonth() + 1}`}` : "Heden";
+                const startDate = `${project.start.getFullYear()}${`-${project.start.getMonth()}`}`;
+                const endDate = project.end ? `${project.end.getFullYear()}${`-${project.end.getMonth()}`}` : "Heden";
 
                 return <Project
                     {...project}
