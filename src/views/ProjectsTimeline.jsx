@@ -83,11 +83,11 @@ const ProjectsTimeline = () => {
             </Header>
             <div className="flex gap-2 md:gap-4 p-8 flex-col w-11/12 children:flex children:items-center children:justify-between children:flex-col children:gap-1 sm:children:flex-row sm:w-4/5 md:flex-row md:w-fit">
                 <div>
-                    <label>Zoek op naam</label>
+                    <label>Search by name</label>
                     <input
                         className="border border-1 border-main rounded-md px-2 py-1 flex-1 h-[2.375rem] w-full sm:w-fit"
                         defaultValue={filter.search}
-                        placeholder="Naam..."
+                        placeholder="Name..."
                         onChange={e => filterDispatch({
                             type: "FILTER_SEARCH_CHANGED",
                             payload: e.target.value
@@ -96,10 +96,10 @@ const ProjectsTimeline = () => {
                     />
                 </div>
                 <div>
-                    <label>Technologie</label>
+                    <label>Technologies</label>
                     <Select
                         className="flex-1 min-h-[2.375rem] w-full sm:w-fit"
-                        placeholder="Selecteer..."
+                        placeholder="Select..."
                         styles={{ control: () => controlStyle }}
                         onChange={techs => filterDispatch({ type: "FILTER_TECH_CHANGED", payload: techs.map(tech => tech.value) })}
                         value={filter.technologies.map(tech => ({ value: tech, label: tech }))}
@@ -109,7 +109,7 @@ const ProjectsTimeline = () => {
                     />
                 </div>
                 <div>
-                    <label>Sorteer op</label>
+                    <label>Sort by</label>
                     <Select
                         className="flex-1 min-h-[2.375rem] w-full sm:w-fit"
                         styles={{ control: () => controlStyle }}
@@ -136,7 +136,7 @@ const ProjectsTimeline = () => {
                 projects={projects.data}
             />}
             {(projects.loaded && projects.error) && <div className="text-red-700 text-[2rem] md:text-[3rem] lg:text-[4rem] p-4 text-center">
-                Er is iets mis gegaan met het laden van de projecten
+                Something went wrong while loading the projects.
             </div>}
         </div >
     );
