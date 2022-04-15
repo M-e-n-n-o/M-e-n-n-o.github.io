@@ -44,8 +44,10 @@ const TimelineContainer = ({ projects = [], className = "", onParsed, filter }) 
     return (
         <div className={`flex flex-col ${className}`}>
             {filteredProjects.map((project) => {
-                const startDate = `${project.start.getFullYear()}${project.start.getMonth() === 0 ? "" : `-${project.start.getMonth()}`}`;
-                const endDate = project.end ? `${project.end.getFullYear()}${project.end.getMonth() === 0 ? "" : `-${project.end.getMonth()}`}` : "Heden";
+
+                const startDate = `${project.start.getFullYear()}${`-${project.start.getMonth() + 1}`}`;
+                const endDate = project.end ? `${project.end.getFullYear()}${`-${project.end.getMonth() + 1}`}` : "Heden";
+                
                 return <Project
                     {...project}
                     key={project.title}
