@@ -9,6 +9,25 @@ const sortFunctions = {
     "Naam CBA": (projectA, projectB) => projectA.title.toLowerCase() < projectB.title.toLowerCase()
 };
 
+function swap(arr, firstIndex, secondIndex) {
+    var temp = arr[firstIndex];
+    arr[firstIndex] = arr[secondIndex];
+    arr[secondIndex] = temp;
+}
+
+function bubbleSortAlgo(arraaytest, sortFunction) {
+    var len = arraaytest.length,
+        i, j, stop;
+    for (i = 0; i < len; i++) {
+        for (j = 0, stop = len - i; j < stop; j++) {
+            if (sortFunction(arraaytest[j], arraaytest[j + 1])) {
+                swap(arraaytest, j, j + 1);
+            }
+        }
+    }
+    return arraaytest;
+}
+
 const TimelineContainer = ({ projects = [], className = "", onParsed, filter }) => {
     const [filteredProjects, setFilteredProjects] = useState([]);
 
@@ -37,7 +56,8 @@ const TimelineContainer = ({ projects = [], className = "", onParsed, filter }) 
 
         if (typeof (onParsed) === "function") { onParsed(newFilterData); }
 
-        setFilteredProjects(newFilteredProjects.sort(sortFunctions[filter.sort]));
+        setFilteredProjects(bubbleSortAlgo(newFilteredProjects, sortFunctions[filter.sort]));
+        //setFilteredProjects(newFilteredProjects.sort(sortFunctions[filter.sort]));
 
     }, [projects, filter]);
 
