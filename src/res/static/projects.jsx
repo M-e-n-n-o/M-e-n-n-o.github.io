@@ -17,14 +17,14 @@ export default [
 
     {
         start: new Date(2021, 4),
-        title: "C++ game engine: ByteCat",
+        title: "C++ graphics engine: ByteCat",
         short: <>
-            Omdat ik al meerdere keren opnieuw een basis renderer, shader en zulke dingen heb moeten maken elke keer als ik iets in OpenGL wilde doen.<br />
-            Ik heb besloten om een basis opzet te maken voor elke game/applicatie die iets grafisch nodig heeft. Om deze reden ben ik begonnen met het maken van mijn eigen game engine: ByteCat.
+            Because I've had to recreate renderers, shaders, and other graphics component several times before every time I wanted to do something in OpenGL.<br />
+            I decided to make a basic setup for every game/application that needs something with graphics. For this reason, I started making my own graphics engine: ByteCat.
         </>,
         shortImage: ByteCatImg,
         link: "https://github.com/CodingWithMenno/ByteCat",
-        linkLabel: "Bekijk het op Github",
+        linkLabel: "Take a look at the Github",
         technologies: [
             { name: "C++" },
             { name: "OpenGL", link: "https://www.opengl.org/" },
@@ -33,9 +33,9 @@ export default [
 
     {
         start: new Date(2021, 4),
-        end: new Date(2021, 5),
-        title: "Mijn (oude) website",
-        short: <>Ik ben begonnen met het leren van web-development. Op mijn website maak ik gebruik van HTML5, CSS en JavaScript.</>,
+        end: new Date("2021-5"),
+        title: "My (old) website",
+        short: <>I started learning web development :O</>,
         shortImage: OldWebsiteImg,
         technologies: [
             { name: "Web" },
@@ -48,31 +48,31 @@ export default [
     {
         start: new Date(2020, 12),
         end: new Date(2021, 3),
-        title: "3D OpenGL game",
+        title: "Java OpenGL game",
         short: <>
-            Dit is mijn eerste 3D game. Deze game is gemaakt zonder een engine in Java met OpenGL. De game bevat o.a.:
+            This is my first good application created using OpenGL. This app is created in Java with LWJGL which is a wrapper for OpenGL<br />
+            which makes it possible to use Java to communicate with the Graphics Card. This application has the following features:
             <ul className="list-disc pl-4">
-                <li>Een 3d roterend botsing detectie systeem</li>
-                <li>Een simpel 2D UI systeem</li>
-                <li>Een animatie systeem</li>
-                <li>Willekeurig terrein generatie met terrein kleur a.d.h.v. hoogte</li>
-                <li>Water met reflectie en breking</li>
-                <li>Schaduwen</li>
-                <li>Een entiteit systeem</li>
-                <li>Een particlesysteem</li>
-                <li>Biomes in het terrein (met geluid en particles)</li>
-                <li>Een lichtsysteem</li>
-                <li>Vogels met het boids algoritme</li>
-                <li>Omgekeerde kinematica</li>
+                <li>A 3D rotating collision detection system</li>
+                <li>A simple 2D UI system</li>
+                <li>A animation system</li>
+                <li>Random terrain generation with coloring based on the height of the terrain</li>
+                <li>Water with reflection and refractrions</li>
+                <li>Shadows</li>
+                <li>Customizable particlesystems</li>
+                <li>Biomes in the terrain (with sounds and particles)</li>
+                <li>A lighting system</li>
+                <li>Birds with the boids algoritme</li>
+                <li>Inversed kinematics</li>
             </ul>
         </>,
         shortImage: OpenGLGameImg,
         link: "https://github.com/CodingWithMenno/3DGame",
-        linkLabel: "Bekijk de source",
+        linkLabel: "Take a look at the Github",
         technologies: [
             { name: "Java" },
             { name: "OpenGL", link: "https://www.opengl.org/" },
-            { name: "No engine" }
+            { name: "LWJGL", link: "https://www.lwjgl.org" }
         ]
     },
 
@@ -81,17 +81,15 @@ export default [
         end: new Date(2020, 12),
         title: "Elektrische Step",
         short: <>
-            Deze applicatie bevat software voor een arduino die een motor aanstuurt en software voor een android app die met de arduino kan communiceren.<br />
-            De app maakt gebruik van GPS om de snelheid te berekenen van de gebruiker en Bluetooth om te communiceren met de Arduino.
+            This application features software for an arduino which controlls a motor mounted on a scooter. This arduino can then communicate<br />
+            using Bluetooth with an Android app which can show statistics about the motor, control the motor and calculate the speed using GPS.
         </>,
         shortImage: EStepImg,
         link: "https://github.com/CodingWithMenno/ElektrischeStep",
-        linkLabel: "Bekijk de sourcecode",
+        linkLabel: "Take a look at the Github",
         technologies: [
-            { name: "Arduino", link: "https://www.arduino.cc/" },
-            { name: "Mobile" },
-            { name: "Bluetooth" },
-            { name: "GPS" }
+            { name: "Microcontrollers", link: "https://www.arduino.cc/" },
+            { name: "Android" }
         ]
     },
 
@@ -100,38 +98,41 @@ export default [
         end: new Date(2020, 10),
         title: "Discord Bot",
         short: <>
-            Deze bot is gemaakt in Java en maakt gebruik van een API om te verbinden met Discord.<br />
-            De bot heeft allemaal leuke commands + elke gebruiker van de bot kan een eigen playlist aanmaken met liedjes die de bot altijd onthoud.
+            This chatbot is made using Java and uses an API to connect to the services of Discord. <br />
+            This bot has a few nice commands to for example create custom music playlist to listen to in voice channels <br />
+            or get the weather info from all around the Netherlands or just send some memes.
         </>,
         link: "https://github.com/CodingWithMenno/discordBot",
-        linkLabel: "Bekijk op Github",
+        linkLabel: "Take a look at the Github",
         technologies: [
             { name: "Java" },
-            { name: "Discord" }
+            { name: "Bot" }
         ]
     },
 
     {
         start: new Date(2020, 4),
-        end: new Date(2020, 6),
+        end: new Date("2020-6"),
         title: "Online platformer",
         short: <>
-            Deze game is gemaakt vanuit niks in Java. Dit is mijn eerste online applicatie.<br />
-            In de app is er een lobby waar je kan chatten met andere players.<br />
-            Daarnaast kan je een game starten samen met een andere player en tegen hem strijden in een simpele maar toch leuke platformer.
+            This app is made using JavaFX and is my first online application!<br />
+            In the app is a lobby where you can chat with other players or watch the bot send random messages.<br />
+            Besides this you can start a game with another player in the lobby to battle against in a simple but engaging platformer.
         </>,
         shortImage: OnlinePlatformer,
         link: "https://drive.google.com/file/d/14CC6SVxv3TZe4IAYSq6mjJqU0dlE1vuU/view?usp=sharing",
-        linkLabel: "Download",
+        linkLabel: "See the source code",
         technologies: [
             { name: "Java" },
-            { name: "No engine" }
+            { name: "JavaFX", link: "https://openjfx.io" },
+            { name: "Client-server" },
+            { name: "Bot" }
         ]
     },
 
     {
         start: new Date(2020, 1),
-        end: new Date(2020, 3),
+        end: new Date("2020-3"),
         title: "Getting over it",
         short: <>
             Deze game is gebaseerd op de game: Getting over it with Bennett Foddy. <br />
@@ -140,10 +141,9 @@ export default [
         </>,
         shortImage: GettinOverItImg,
         link: "https://drive.google.com/open?id=1ITomFEyggwv_WgbSMc6KsfMaIz0QTNFB",
-        linkLabel: "Download de source",
+        linkLabel: "See the source code",
         technologies: [
-            { name: "Java" },
-            { name: "No engine" }
+            { name: "Java" }
         ]
     },
 
@@ -158,7 +158,7 @@ export default [
         </>,
         shortImage: DinosImg,
         link: "https://drive.google.com/file/d/1VgZ6Ga8cBX992wnaTddUaUGykjNG4g5a/view?usp=sharing",
-        linkLabel: "Download source",
+        linkLabel: "See the source code",
         technologies: [
             { name: "Java" },
         ]
