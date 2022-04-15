@@ -16,7 +16,7 @@ If you exclude the end date it will assume that the project is ongoing
 export default [
 
     {
-        start: new Date("2021-4"),
+        start: new Date(2021, 4),
         title: "C++ game engine: ByteCat",
         short: <>
             Omdat ik al meerdere keren opnieuw een basis renderer, shader en zulke dingen heb moeten maken elke keer als ik iets in OpenGL wilde doen.<br />
@@ -32,8 +32,8 @@ export default [
     },
 
     {
-        start: new Date("2021-4"),
-        end: new Date("2021-5"),
+        start: new Date(2021, 4),
+        end: new Date(2021, 5),
         title: "Mijn (oude) website",
         short: <>Ik ben begonnen met het leren van web-development. Op mijn website maak ik gebruik van HTML5, CSS en JavaScript.</>,
         shortImage: OldWebsiteImg,
@@ -46,8 +46,8 @@ export default [
     },
 
     {
-        start: new Date("2020-12"),
-        end: new Date("2021-3"),
+        start: new Date(2020, 12),
+        end: new Date(2021, 3),
         title: "3D OpenGL game",
         short: <>
             Dit is mijn eerste 3D game. Deze game is gemaakt zonder een engine in Java met OpenGL. De game bevat o.a.:
@@ -77,8 +77,8 @@ export default [
     },
 
     {
-        start: new Date("2020-10"),
-        end: new Date("2020-12"),
+        start: new Date(2020, 10),
+        end: new Date(2020, 12),
         title: "Elektrische Step",
         short: <>
             Deze applicatie bevat software voor een arduino die een motor aanstuurt en software voor een android app die met de arduino kan communiceren.<br />
@@ -96,8 +96,8 @@ export default [
     },
 
     {
-        start: new Date("2020-9"),
-        end: new Date("2020-10"),
+        start: new Date(2020, 9),
+        end: new Date(2020, 10),
         title: "Discord Bot",
         short: <>
             Deze bot is gemaakt in Java en maakt gebruik van een API om te verbinden met Discord.<br />
@@ -112,8 +112,8 @@ export default [
     },
 
     {
-        start: new Date("2020-4"),
-        end: new Date("2020-6"),
+        start: new Date(2020, 4),
+        end: new Date(2020, 6),
         title: "Online platformer",
         short: <>
             Deze game is gemaakt vanuit niks in Java. Dit is mijn eerste online applicatie.<br />
@@ -130,8 +130,8 @@ export default [
     },
 
     {
-        start: new Date("2020-1"),
-        end: new Date("2020-3"),
+        start: new Date(2020, 1),
+        end: new Date(2020, 3),
         title: "Getting over it",
         short: <>
             Deze game is gebaseerd op de game: Getting over it with Bennett Foddy. <br />
@@ -148,8 +148,8 @@ export default [
     },
 
     {
-        start: new Date("2019-11"),
-        end: new Date("2020-1"),
+        start: new Date(2019, 11),
+        end: new Date(2020, 1),
         title: "Google Dino Game",
         short: <>
             Dit is de eerste game die ik ooit heb gemaakt. De game is gebaseerd op de hidden dino game van google. <br />
