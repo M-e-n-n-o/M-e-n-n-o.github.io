@@ -32,6 +32,7 @@ const Tree = ({ className = "" }) => {
                     p5.rotate(p5.random(50, 60));
                     branch(length * p5.random(0.7, 0.9));
                 } else {
+                    p5.randomSeed(seed * length);
                     var r = 80 + p5.random(-20, 20);
                     var g = 120 + p5.random(-20, 20);
                     var b = 40 + p5.random(-20, 20);
@@ -50,11 +51,11 @@ const Tree = ({ className = "" }) => {
 
                 const { width, height } = p5;
 
-                p5.translate(width / 2, height);
+                p5.translate(width - (width / 3), height);
 
                 const aspect = width / height;
 
-                p5.scale(1 * aspect, 1 * aspect);
+                p5.scale(2 * aspect, 2 * aspect);
                 branch(25);
             };
 

@@ -1,9 +1,10 @@
 import React from 'react';
 import Dots from "../components/Dots";
+import Tree from "../components/Tree";
 import LinkedinImg from "../res/images/linkedin.svg?component";
 import GithubImg from "../res/images/github.svg?component";
 import IdCardImg from "../res/images/id-card.svg?component";
-import MennoImg from "../res/images/menno.webp";
+// import MennoImg from "../res/images/menno.webp";
 import CvPDF from "../res/static/CV.pdf";
 import "../res/css/views/Front.scss";
 
@@ -61,6 +62,7 @@ const Front = () => {
                 </div>
             </div>
             <Dots className="absolute top-0 z-0" />
+            <Tree className="absolute top-0 z-0" />
         </div>
     );
 };
