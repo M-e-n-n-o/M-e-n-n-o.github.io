@@ -12,8 +12,8 @@ const Project = ({ title, text, image, timestamp, technologies = [], link, linkL
                             <div className="text-[2rem] text-main md:break-words lg:break-normal">{title}</div>
                             <div className="text-zinc-400 text-[1rem]">{timestamp}</div>
                         </div>
-                        {link && <Link link={link} className="flex justify-between items-center max-h-10 w-2/3 sm:w-fit md:w-full md:mt-4 gap-2" newTab>
-                            <span>{linkLabel ?? "Github page"}</span>
+                        {link && <Link link={link} className="flex justify-between items-center w-2/3 sm:w-fit md:w-full md:mt-4 gap-2" newTab>
+                            <span className="text-center">{linkLabel ?? "Github page"}</span>
                             <LinkImg fill="currentColor" className="h-[1em]" />
                         </Link>}
                     </div>
