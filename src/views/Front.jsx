@@ -4,7 +4,8 @@ import Tree from "../components/Tree";
 import LinkedinImg from "../res/images/linkedin.svg?component";
 import GithubImg from "../res/images/github.svg?component";
 import IdCardImg from "../res/images/id-card.svg?component";
-// import MennoImg from "../res/images/menno.webp";
+//import MennoImg from "../res/images/menno.webp";
+import ScrollDownImg from "../res/images/ScrollDown.gif";
 import CvPDF from "../res/static/CV.pdf";
 import "../res/css/views/Front.scss";
 
@@ -43,22 +44,32 @@ const Front = () => {
                     </div>
                 </div>
 
-                <div className="z-10 text-[1.8rem] putin:text-[2rem] text-white hover:children:text-main-hover py-8 w-full flex items-center gap-2 flex-col sm:flex-row sm:justify-around " >
-                    <FrontIcon
-                        href="https://www.linkedin.com/in/menno-bil-055100201/"
-                        icon={LinkedinImg}
-                        text="LinkedIn"
-                    />
-                    <FrontIcon
-                        href="https://github.com/CodingWithMenno"
-                        icon={GithubImg}
-                        text="Github"
-                    />
-                    <FrontIcon
-                        href={CvPDF}
-                        icon={IdCardImg}
-                        text="CV"
-                    />
+                <div className='flex flex-col w-5/6 left-1/4'>
+                    <div className='z-10 self-center bottom-eightP w-1/4 md:w-fifteenP xl:w-eightP wide:w-fiveP'>
+                        <img
+                            loading="lazy"
+                            className="object-contain aspect-square"
+                            src={ScrollDownImg}
+                        />
+                    </div>
+
+                    <div className="z-10 text-[1.8rem] putin:text-[2rem] text-white hover:children:text-main-hover py-8 w-full flex items-center gap-2 flex-col sm:flex-row sm:justify-around" >
+                        <FrontIcon
+                            href="https://www.linkedin.com/in/menno-bil-055100201/"
+                            icon={LinkedinImg}
+                            text="LinkedIn"
+                        />
+                        <FrontIcon
+                            href="https://github.com/CodingWithMenno"
+                            icon={GithubImg}
+                            text="Github"
+                        />
+                        <FrontIcon
+                            href={CvPDF}
+                            icon={IdCardImg}
+                            text="CV"
+                        />
+                    </div>
                 </div>
             </div>
             <Dots className="absolute top-0 z-0" />

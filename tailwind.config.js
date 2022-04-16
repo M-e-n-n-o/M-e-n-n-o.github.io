@@ -17,6 +17,12 @@ module.exports = {
         accent: "#195a00",
         call: "#173042",
         "call-hover": "#236477"
+      },
+
+      spacing: {
+        fifteenP: '15%',
+        eightP: '8%',
+        fiveP: '5%'
       }
     },
   },

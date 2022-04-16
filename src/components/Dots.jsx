@@ -10,8 +10,8 @@ const Dots = ({ className = "" }) => {
 
   useEffect(() => {
     const Sketch = (p5) => {
-      const maxVelocity = 3;
-      const totalDots = 5;
+      const maxVelocity = 1.5;
+      const totalDots = 4;
       const dotRadius = 10;
 
       const dots = [];

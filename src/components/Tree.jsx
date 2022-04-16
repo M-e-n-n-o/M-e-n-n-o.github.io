@@ -53,9 +53,10 @@ const Tree = ({ className = "" }) => {
 
                 p5.translate(width - (width / 3), height);
 
-                const aspect = width / height;
+                var aspect = width / height;
+                aspect = p5.max(aspect, 1);
 
-                p5.scale(2 * aspect, 2 * aspect);
+                p5.scale(3 * aspect, 3 * aspect);
                 branch(25);
             };
 
