@@ -22,7 +22,7 @@ const Front = () => {
     return (
         <div className="relative overflow-hidden">
             <div className="min-h-screen flex flex-col justify-between items-center front-container gap-8">
-                <div className="z-10 py-3 text-white flex-1 flex flex-col justify-center items-center md:w-3/4 lg:flex-row xl:w-4/6">
+                <div className="z-10 py-20 text-white flex-1 flex flex-col justify-center items-center md:w-3/4 lg:flex-row xl:w-4/6">
                     <div className="flex-1 flex justify-center">
                         <h1>
                             <p className="text-[1.8rem] putin:text-[2rem] m-0">Hello, I am</p>
@@ -32,13 +32,13 @@ const Front = () => {
                         </h1>
                     </div>
                     <div className="flex-1 flex justify-center">
-                        <div className="flex items-center justify-center w-1/2 py-4 md:p-0 md:max-w-[50%] md:w-fit md:max-h-[60vh]">
+                        {/* <div className="flex items-center justify-center w-1/2 py-4 md:p-0 md:max-w-[50%] md:w-fit md:max-h-[60vh]">
                             <img
                                 className="rounded-full aspect-square object-contain"
                                 src={MennoImg}
                                 alt=""
                             />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 

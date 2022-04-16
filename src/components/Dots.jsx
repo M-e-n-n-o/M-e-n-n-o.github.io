@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import createP5 from "p5";
+
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
 const Dots = ({ className = "" }) => {
   const canvas = useRef();
   const p5Canvas = useRef();
+  // var seed;
 
   useEffect(() => {
     const Sketch = (p5) => {
@@ -47,12 +49,11 @@ const Dots = ({ className = "" }) => {
             vel.y = -vel.y;
           }
 
-          p5.fill("rgb(18, 38, 53)");
-          p5.stroke("rgb(18, 38, 53)");
-          p5.circle(pos.x, pos.y, dotRadius);
-
           p5.fill("rgb(23,48,66)");
           p5.stroke("rgb(23,48,66)");
+
+          p5.circle(pos.x, pos.y, dotRadius);
+
           const nextDot = dots[i < totalDots - 1 ? i + 1 : 0];
           p5.line(pos.x, pos.y, nextDot.pos.x, nextDot.pos.y);
         });
@@ -61,7 +62,7 @@ const Dots = ({ className = "" }) => {
       p5.windowResized = () => {
         p5.resizeCanvas(canvas.current.clientWidth, canvas.current.clientHeight);
       };
-    };
+    }
 
     p5Canvas.current = new createP5(Sketch, canvas.current);
 

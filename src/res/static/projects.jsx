@@ -18,7 +18,7 @@ export default [
         start: { year: 2021, month: 4 },
         title: "C++ game engine: ByteCat",
         short: <>
-            Because I've had to recreate renderers, shaders, and other graphics component several times before every time I wanted to do something in OpenGL.<br />
+            Because I've had to recreate renderers, shaders, and other graphics component several times before every time I wanted to do something in OpenGL.
             I decided to make a basic setup for every game/application that needs something with graphics. For this reason, I started making my own graphics engine: ByteCat.
         </>,
         shortImage: ByteCatGif,
@@ -27,6 +27,20 @@ export default [
         technologies: [
             { name: "C++" },
             { name: "OpenGL", link: "https://www.opengl.org/" },
+        ]
+    },
+
+    {
+        start: { year: 2022, month: 2 },
+        title: "TaskRush",
+        short: <>
+            Together with a 3D artist, whom I got to know during an internship, I started to create a Virtual Reality game in Unity
+            in which the aim is to complete as many tasks as possible within the maximum time.
+        </>,
+        technologies: [
+            { name: "Unity" },
+            { name: "C#" },
+            { name: "VR" }
         ]
     },
 
@@ -49,7 +63,7 @@ export default [
         end: { year: 2021, month: 3 },
         title: "Java OpenGL game",
         short: <>
-            This is my first good application created using OpenGL. This app is created in Java with LWJGL which is a wrapper for OpenGL<br />
+            This is my first good application created using OpenGL. This app is created in Java with LWJGL which is a wrapper for OpenGL
             which makes it possible to use Java to communicate with the Graphics Card. This application has the following features:
             <ul className="list-disc pl-4">
                 <li>A 3D rotating collision detection system</li>
@@ -80,7 +94,7 @@ export default [
         end: { year: 2020, month: 12 },
         title: "Electric Scooter",
         short: <>
-            This application features software for an arduino which controlls a motor mounted on a scooter. This arduino can then communicate<br />
+            This application features software for an arduino which controlls a motor mounted on a scooter. This arduino can then communicate
             using Bluetooth with an Android app which can show statistics about the motor, control the motor and calculate the speed using GPS.
         </>,
         shortImage: EStepImg,
@@ -114,8 +128,8 @@ export default [
         end: { year: 2020, month: 6 },
         title: "Online platformer",
         short: <>
-            This app is made using JavaFX and is my first online application!<br />
-            In the app is a lobby where you can chat with other players or watch the bot send random messages.<br />
+            This app is made using JavaFX and is my first online application!
+            In the app is a lobby where you can chat with other players or watch the bot send random messages.
             Besides this you can start a game with another player in the lobby to battle against in a simple but engaging platformer.
         </>,
         shortImage: OnlinePlatformer,

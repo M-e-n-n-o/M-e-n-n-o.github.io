@@ -5,8 +5,8 @@ import Link from "../Link";
 const Project = ({ title, text, image, timestamp, technologies = [], link, linkLabel }) => {
     return (
         <>
-            <div className="w-full flex items-center justify-between gap-6 flex-col md:flex-row overflow-hidden">
-                <div className="flex flex-col gap-6 w-full md:flex-row">
+            <div className="w-full flex items-center justify-center gap-6 flex-col md:flex-row overflow-hidden">
+                <div className="flex flex-col gap-6 w-full md:flex-row 2xl:w-3/4 putin:w-2/3" >
                     <div className="w-full md:w-1/5 flex flex-col sm:flex-row md:flex-col justify-between items-center md:items-start gap-2">
                         <div>
                             <div className="text-[2rem] text-main md:break-words lg:break-normal">{title}</div>
@@ -35,7 +35,7 @@ const Project = ({ title, text, image, timestamp, technologies = [], link, linkL
                     </div>
                 </div>
             </div>
-            <div className="py-[0.05rem] w-11/12 my-6 bg-zinc-400"></div>
+            <div className="py-[0.05rem] w-11/12 my-10 bg-zinc-400"></div>
         </>
     );
 };
