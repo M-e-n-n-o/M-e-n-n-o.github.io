@@ -98,7 +98,7 @@ const ProjectsTimeline = () => {
                 <div>
                     <label>Technologies</label>
                     <Select
-                        className="flex-1 min-h-[2.375rem] w-full sm:w-fit"
+                        className="flex-1 min-h-[2.375rem] min-w-[10rem] w-full sm:w-fit"
                         placeholder="Select..."
                         styles={{ control: () => controlStyle }}
                         onChange={techs => filterDispatch({ type: "FILTER_TECH_CHANGED", payload: techs.map(tech => tech.value) })}

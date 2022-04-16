@@ -38,7 +38,7 @@ export default [
             in which the aim is to complete as many tasks as possible within the maximum time.
         </>,
         technologies: [
-            { name: "Unity" },
+            { name: "Unity", link: "https://unity.com" },
             { name: "C#" },
             { name: "VR" }
         ]
@@ -102,7 +102,7 @@ export default [
         linkLabel: "Take a look at the Github",
         technologies: [
             { name: "Microcontrollers", link: "https://www.arduino.cc/" },
-            { name: "Android" }
+            { name: "Android", link: "https://developer.android.com" }
         ]
     },
 
@@ -118,8 +118,7 @@ export default [
         link: "https://github.com/CodingWithMenno/discordBot",
         linkLabel: "Take a look at the Github",
         technologies: [
-            { name: "Java" },
-            { name: "Bot" }
+            { name: "Java" }
         ]
     },
 
@@ -138,8 +137,7 @@ export default [
         technologies: [
             { name: "Java" },
             { name: "JavaFX", link: "https://openjfx.io" },
-            { name: "Client-server" },
-            { name: "Bot" }
+            { name: "Client-server" }
         ]
     },
 
