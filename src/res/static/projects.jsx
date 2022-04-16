@@ -16,7 +16,7 @@ export default [
 
     {
         start: { year: 2021, month: 4 },
-        title: "C++ game engine: ByteCat",
+        title: "Graphics engine: ByteCat",
         short: <>
             Because I've had to recreate renderers, shaders, and other graphics component several times before every time I wanted to do something in OpenGL.
             I decided to make a basic setup for every game/application that needs something with graphics. For this reason, I started making my own graphics engine: ByteCat.
@@ -34,7 +34,7 @@ export default [
         start: { year: 2022, month: 2 },
         title: "TaskRush",
         short: <>
-            Together with a 3D artist, whom I got to know during an internship, I started to create a Virtual Reality game in Unity
+            Together with a 3D artist, whom I got to know during an internship, I started to create a Virtual Reality game in Unity <br />
             in which the aim is to complete as many tasks as possible within the maximum time.
         </>,
         technologies: [
