@@ -45,20 +45,6 @@ export default [
     },
 
     {
-        start: { year: 2021, month: 4 },
-        end: { year: 2021, month: 5 },
-        title: "My (old) website",
-        short: <>I started learning web development :O</>,
-        shortImage: OldWebsiteImg,
-        technologies: [
-            { name: "Web" },
-            { name: "HTML5" },
-            { name: "CSS" },
-            { name: "JavaScript" }
-        ]
-    },
-
-    {
         start: { year: 2020, month: 12 },
         end: { year: 2021, month: 3 },
         title: "Java OpenGL game",
