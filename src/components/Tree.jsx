@@ -51,12 +51,12 @@ const Tree = ({ className = "" }) => {
 
                 const { width, height } = p5;
 
-                p5.translate(width - (width / 3), height);
+                p5.translate(width - (width / 9), height);
 
                 var aspect = width / height;
                 aspect = p5.max(aspect, 1);
 
-                p5.scale(3 * aspect, 3 * aspect);
+                p5.scale(1.5 * aspect, 1.5 * aspect);
                 branch(25);
             };
 
