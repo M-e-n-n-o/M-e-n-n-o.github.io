@@ -5,6 +5,7 @@ import "./res/css/index.scss";
 
 import Front from "./views/Front";
 import AboutMe from "./views/AboutMe";
+import Contact from "./views/Contact"
 
 const container = document.getElementById("react-root");
 const root = createRoot(container);
@@ -19,6 +20,7 @@ const Root = () => {
         <Suspense fallback={<></>}>
             <ProjectsTimeline />
         </Suspense>
+        <Contact />
         <Suspense fallback={<></>}>
             <Footer />
         </Suspense>
