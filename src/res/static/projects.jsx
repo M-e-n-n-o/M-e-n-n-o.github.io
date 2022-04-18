@@ -15,6 +15,20 @@ If you exclude the end date it will assume that the project is ongoing
 export default [
 
     {
+        start: { year: 2022, month: 2 },
+        title: "TaskRush",
+        short: <>
+            Together with a 3D artist, whom I got to know during an internship, I started to create a Virtual Reality game in Unity <br />
+            in which the aim is to complete as many tasks as possible within the maximum time.
+        </>,
+        technologies: [
+            { name: "Unity", link: "https://unity.com" },
+            { name: "C#" },
+            { name: "VR" }
+        ]
+    },
+
+    {
         start: { year: 2021, month: 4 },
         title: "Graphics engine: ByteCat",
         short: <>
@@ -27,20 +41,6 @@ export default [
         technologies: [
             { name: "C++" },
             { name: "OpenGL", link: "https://www.opengl.org/" },
-        ]
-    },
-
-    {
-        start: { year: 2022, month: 2 },
-        title: "TaskRush",
-        short: <>
-            Together with a 3D artist, whom I got to know during an internship, I started to create a Virtual Reality game in Unity <br />
-            in which the aim is to complete as many tasks as possible within the maximum time.
-        </>,
-        technologies: [
-            { name: "Unity", link: "https://unity.com" },
-            { name: "C#" },
-            { name: "VR" }
         ]
     },
 
