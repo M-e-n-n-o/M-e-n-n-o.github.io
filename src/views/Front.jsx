@@ -73,7 +73,7 @@ const Front = () => {
                 </div>
             </div>
             <Dots className="absolute top-0 z-0" />
-            <div className='fixed inset-0 -z-0'>
+            <div className='fixed inset-0 -z-0 pointer-events-none'>
                 <Tree className='' />
             </div>
         </div>
