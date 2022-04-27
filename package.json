@@ -1,9 +1,9 @@
 {
-  "name": "codingwithmenno.github.io",
+  "name": "M-e-n-n-o.github.io",
   "version": "1.0.0",
-  "description": "CodingWithMenno.github.io",
-  "homepage": "https://codingwithmenno.github.io/",
-  "author": "CodingWithMenno",
+  "description": "M-e-n-n-o.github.io",
+  "homepage": "https://M-e-n-n-o.github.io/",
+  "author": "M-e-n-n-o",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodingWithMenno/CodingWithMenno.github.io.git"
+    "url": "git+https://github.com/M-e-n-n-o/M-e-n-n-o.github.io.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/CodingWithMenno/CodingWithMenno.github.io/issues"
+    "url": "https://github.com/M-e-n-n-o/M-e-n-n-o.github.io/issues"
   },
   "dependencies": {
     "p5": "^1.4.1",

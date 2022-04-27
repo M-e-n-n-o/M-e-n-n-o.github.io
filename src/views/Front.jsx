@@ -60,7 +60,7 @@ const Front = () => {
                             text="LinkedIn"
                         />
                         <FrontIcon
-                            href="https://github.com/CodingWithMenno"
+                            href="https://github.com/M-e-n-n-o"
                             icon={GithubImg}
                             text="Github"
                         />

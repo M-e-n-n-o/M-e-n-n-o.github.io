@@ -36,7 +36,7 @@ export default [
             I decided to make a basic setup for every game/application that needs something with graphics. For this reason, I started making my own graphics engine: ByteCat.
         </>,
         shortImage: ByteCatGif,
-        link: "https://github.com/CodingWithMenno/ByteCat",
+        link: "https://github.com/M-e-n-n-o/ByteCat",
         linkLabel: "Take a look at the Github",
         technologies: [
             { name: "C++" },
@@ -66,7 +66,7 @@ export default [
             </ul>
         </>,
         shortImage: OpenGLGameImg,
-        link: "https://github.com/CodingWithMenno/3DGame",
+        link: "https://github.com/M-e-n-n-o/3DGame",
         linkLabel: "Take a look at the Github",
         technologies: [
             { name: "Java" },
@@ -84,7 +84,7 @@ export default [
             using Bluetooth with an Android app which can show statistics about the motor, control the motor and calculate the speed using GPS.
         </>,
         shortImage: EStepImg,
-        link: "https://github.com/CodingWithMenno/ElektrischeStep",
+        link: "https://github.com/M-e-n-n-o/ElektrischeStep",
         linkLabel: "Take a look at the Github",
         technologies: [
             { name: "Microcontrollers", link: "https://www.arduino.cc/" },
@@ -101,7 +101,7 @@ export default [
             This bot has a few nice commands to for example create custom music playlist to listen to in voice channels <br />
             or get the weather info from all around the Netherlands or just send some memes.
         </>,
-        link: "https://github.com/CodingWithMenno/discordBot",
+        link: "https://github.com/M-e-n-n-o/discordBot",
         linkLabel: "Take a look at the Github",
         technologies: [
             { name: "Java" }

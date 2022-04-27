@@ -3,7 +3,7 @@ import Link from "../components/Link";
 import CvPDF from "../res/static/CV.pdf";
 
 const FooterLinks = [
-    { name: "Github", link: "https://github.com/CodingWithMenno" },
+    { name: "Github", link: "https://github.com/M-e-n-n-o" },
     { name: "LinkedIn", link: "https://www.linkedin.com/in/menno-bil-055100201/" },
     { name: "CV", link: CvPDF }
 ];
