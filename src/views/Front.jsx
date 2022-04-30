@@ -60,14 +60,14 @@ const Front = () => {
                             text="LinkedIn"
                         />
                         <FrontIcon
+                            href={CvPDF}
+                            icon={IdCardImg}
+                            text="C.V."
+                        />
+                        <FrontIcon
                             href="https://github.com/M-e-n-n-o"
                             icon={GithubImg}
                             text="Github"
-                        />
-                        <FrontIcon
-                            href={CvPDF}
-                            icon={IdCardImg}
-                            text="CV"
                         />
                     </div>
                 </div>
