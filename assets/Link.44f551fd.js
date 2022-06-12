@@ -1,0 +1,1 @@
+import{a as o}from"./index.fb11a871.js";const s=({children:a,link:e,newTab:r,className:t})=>o("a",{className:`px-2 py-1 bg-call hover:bg-call-hover text-white rounded-md ${t}`,href:e,target:r&&"_blank",children:a});export{s as L};
