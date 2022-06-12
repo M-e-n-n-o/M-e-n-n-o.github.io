@@ -13,8 +13,9 @@ const AboutMe = () => {
                     <img src={MennoImg} className="flex-1 aspect-1 rounded-md" />
                 </div>
                 <div className="text-[1.5rem] w-full flex-1 flex items-center py-4 sm:max-w-fit">
-                    Hello, I am Menno Bil and I am currently a third year Computer Science/Engineering student at Avans Hogeschool.
-                    On this website, I publish all the side projects that I worked besides my work or school.
+                    Hi, I am Menno Bil and I am a Dutch Computer Science and Engineering student at Avans University of Applied Sciences.
+                    I am super enthusiastic about Graphics and hardware programming and love spending a lot of my free time on programming.
+                    On this website, I publish all the side projects that I have worked on besides my work or school.
                 </div>
             </div>
         </div>

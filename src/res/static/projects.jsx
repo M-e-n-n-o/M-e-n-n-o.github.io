@@ -5,6 +5,7 @@ import EStepImg from "../images/EStep.webp";
 import OldWebsiteImg from "../images/OldWebsite.webp";
 import GettinOverItImg from "../images/GOI.webp";
 import OnlinePlatformer from "../images/Platformer.webp";
+import TaskRushGif from "../images/TaskRush.gif"
 
 /*
 Note: 
@@ -18,9 +19,14 @@ export default [
         start: { year: 2022, month: 2 },
         title: "TaskRush",
         short: <>
-            Together with a 3D artist, whom I got to know during an internship, I started to create a Virtual Reality game in Unity <br />
-            in which the aim is to complete as many tasks as possible within the maximum time.
+            After a great collaboration during an internship with Frank Datema, a 3D artist, we decided to create a game together: TaskRush.
+            In this Virtual Reality (VR) application, the aim is to complete as many tasks as possible within the maximum amount of time.
+            The tasks range from catching fish with a spear to eating as many sandwiches as possible! The game takes place on a stage where 
+            a mysterious character commands you. The goal of this project is to release this game on online stores such as Steam and Meta.
         </>,
+        shortImage: TaskRushGif,
+        link: "https://discord.gg/Jxs3QcRPW2",
+        linkLabel: "Discord server",
         technologies: [
             { name: "Unity", link: "https://unity.com" },
             { name: "C#" },
@@ -32,9 +38,11 @@ export default [
         start: { year: 2021, month: 4 },
         title: "Graphics engine: ByteCat",
         short: <>
-            Because I've had to recreate renderers, shaders, and other graphics component several times before every time I wanted to do something in OpenGL.
-            I decided to make a basic setup for every game/application that needs something with graphics. For this reason, I started making my own graphics engine: ByteCat.
-        </>,
+            Welcome to ByteCat, my very own graphics engine! The development of this engine has started because every time I wanted to create something
+            in OpenGL I've had to start over from scratch and create the same graphics components over and over again. This goal has already been reached!
+            The next goal for this engine has extended way beyond this and focusses on building an extensive and enjoyable to work with engine with a 
+            simple and easy to navigate user interface.
+            </>,
         shortImage: ByteCatGif,
         link: "https://github.com/M-e-n-n-o/ByteCat",
         linkLabel: "Take a look at the Github",
@@ -49,7 +57,7 @@ export default [
         end: { year: 2021, month: 3 },
         title: "Java OpenGL game",
         short: <>
-            This is my first good application created using OpenGL. This app is created in Java with LWJGL which is a wrapper for OpenGL
+            This is my very first graphics project using OpenGL. This app is created in Java with LWJGL which is a wrapper for OpenGL
             which makes it possible to use Java to communicate with the Graphics Card. This application has the following features:
             <ul className="list-disc pl-4">
                 <li>A 3D rotating collision detection system</li>
@@ -123,7 +131,7 @@ export default [
         technologies: [
             { name: "Java" },
             { name: "JavaFX", link: "https://openjfx.io" },
-            { name: "Client-server" }
+            { name: "Networking" }
         ]
     },
 
@@ -132,9 +140,10 @@ export default [
         end: { year: 2020, month: 3 },
         title: "Getting over it",
         short: <>
-            This game is based on the popular indie game "Getting over it with Bennett Foddy" but with a twist.<br />
-            This game features a creative world editor where you can create the world of your dreams!<br />
-            Besides this there are several hidden secrets placed all around the map.
+            This game, which is created using a very simple 2D graphics framework built by my university, is based on the popular indie game 
+            "Getting over it with Bennett Foddy". The goal in this game is to reach the end of the level with only a sledgehammer to move around. 
+            Besides the almost impossible standard level to complete this game also features a world editor where you can create a world of your own!
+            At last there are also several hidden secrets placed all around the map.
         </>,
         shortImage: GettinOverItImg,
         link: "https://drive.google.com/open?id=1ITomFEyggwv_WgbSMc6KsfMaIz0QTNFB",
@@ -149,8 +158,9 @@ export default [
         end: { year: 2020, month: 1 },
         title: "Google Dino Game",
         short: <>
-            This is the first game I ever created. It is based on the hidden dino game in Google Chrome.<br />
-            When completing the final level, there is a hidden secret.
+            My very first side project! This game, created in Java using the AWT framework, is based on the secret dino game in Google Chrome but
+            is a 100x times harder! The application exist of 6 levels with each one getting more and more difficult. After completing the last
+            level there is a secret easter egg which you will have to figure out for yourself :)
         </>,
         shortImage: DinosImg,
         link: "https://drive.google.com/file/d/1VgZ6Ga8cBX992wnaTddUaUGykjNG4g5a/view?usp=sharing",
