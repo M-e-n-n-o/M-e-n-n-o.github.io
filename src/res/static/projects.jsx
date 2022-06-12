@@ -58,20 +58,10 @@ export default [
         title: "Java OpenGL game",
         short: <>
             This is my very first graphics project using OpenGL. This app is created in Java with LWJGL which is a wrapper for OpenGL
-            which makes it possible to use Java to communicate with the Graphics Card. This application has the following features:
-            <ul className="list-disc pl-4">
-                <li>A 3D rotating collision detection system</li>
-                <li>A simple 2D UI system</li>
-                <li>A animation system</li>
-                <li>Random terrain generation with coloring based on the height of the terrain</li>
-                <li>Water with reflection and refractrions</li>
-                <li>Shadows</li>
-                <li>Customizable particlesystems</li>
-                <li>Biomes in the terrain (with sounds and particles)</li>
-                <li>A lighting system</li>
-                <li>Birds with the boids algoritme</li>
-                <li>Inversed kinematics</li>
-            </ul>
+            which makes it possible to use Java to communicate with the Graphics Card. This application has the following features: 
+            Water with reflection and refractrion, a lighting system, shadows, a 3D rotating collision detection system, birds with the boids algorithm, 
+            inversed kinematics, an animation system, random terrain generation with coloring based on the height of the terrain, customizable particlesystems, 
+            biomes in the terrain (with sounds and particles) & a simple 2D UI system.
         </>,
         shortImage: OpenGLGameImg,
         link: "https://github.com/M-e-n-n-o/3DGame",
@@ -122,7 +112,7 @@ export default [
         title: "Online platformer",
         short: <>
             This app is made using JavaFX and is my first online application!
-            In the app is a lobby where you can chat with other players or watch the bot send random messages.
+            In the app is a lobby where you can chat with other players or watch the chatbot send random messages.
             Besides this you can start a game with another player in the lobby to battle against in a simple but engaging platformer.
         </>,
         shortImage: OnlinePlatformer,
