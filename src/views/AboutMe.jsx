@@ -14,7 +14,7 @@ const AboutMe = () => {
                 </div>
                 <div className="text-[1.5rem] w-full flex-1 flex items-center py-4 sm:max-w-fit">
                     Hi, I am Menno Bil and I'm a Dutch Computer Science and Engineering student at Avans University of Applied Sciences.
-                    I am super enthusiastic about Graphics and hardware programming and love spending a lot of my free time programming.
+                    I am super enthusiastic about Graphics and hardware programming and love spending a lot of my free time there.
                     On this website, I publish all the side projects that I have worked on besides my work or school.
                 </div>
             </div>

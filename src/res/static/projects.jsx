@@ -21,7 +21,7 @@ export default [
         short: <>
             After a great collaboration during an internship with Frank Datema, a 3D artist, we decided to create a game together: TaskRush.
             In this Virtual Reality (VR) application, the aim is to complete as many tasks as possible within the maximum amount of time.
-            The tasks range from catching fish with a spear to eating as many sandwiches as possible! The game takes place on a stage where 
+            The tasks range from catching fish with a spear to eating as many sandwiches as possible! The game takes place on a stage where
             a mysterious character commands you. The goal of this project is to release this game on online stores such as Steam and Meta.
         </>,
         shortImage: TaskRushGif,
@@ -40,15 +40,16 @@ export default [
         short: <>
             Welcome to ByteCat, my very own graphics engine! The development of this engine has started because every time I wanted to create something
             in OpenGL I've had to start over from scratch and create the same graphics components over and over again. This goal has already been reached!
-            The next goal for this engine has extended way beyond this and focusses on building an extensive and enjoyable to work with engine with a 
-            simple and easy to navigate user interface.
-            </>,
+            The next goal for this engine has extended way beyond this and focusses on building an extensive and enjoyable to work with engine with, in the
+            future, a simple and easy to navigate user interface.
+        </>,
         shortImage: ByteCatGif,
         link: "https://github.com/M-e-n-n-o/ByteCat",
         linkLabel: "Take a look at the Github",
         technologies: [
             { name: "C++" },
             { name: "OpenGL", link: "https://www.opengl.org/" },
+            { name: "Android", link: "https://developer.android.com" }
         ]
     },
 
@@ -58,9 +59,9 @@ export default [
         title: "Java OpenGL game",
         short: <>
             This is my very first graphics project using OpenGL. This app is created in Java with LWJGL which is a wrapper for OpenGL
-            which makes it possible to use Java to communicate with the Graphics Card. This application has the following features: 
-            Water with reflection and refractrion, a lighting system, shadows, a 3D rotating collision detection system, birds with the boids algorithm, 
-            inversed kinematics, an animation system, random terrain generation with coloring based on the height of the terrain, customizable particlesystems, 
+            which makes it possible to use Java to communicate with the Graphics Card. This application has the following features:
+            Water with reflection and refractrion, a lighting system, shadows, a 3D rotating collision detection system, birds with the boids algorithm,
+            inversed kinematics, an animation system, random terrain generation with coloring based on the height of the terrain, customizable particlesystems,
             biomes in the terrain (with sounds and particles) & a simple 2D UI system.
         </>,
         shortImage: OpenGLGameImg,
@@ -130,8 +131,8 @@ export default [
         end: { year: 2020, month: 3 },
         title: "Getting over it",
         short: <>
-            This game, which is created using a very simple 2D graphics framework built by my university, is based on the popular indie game 
-            "Getting over it with Bennett Foddy". The goal in this game is to reach the end of the level with only a sledgehammer to move around. 
+            This game, which is created using a very simple 2D graphics framework built by my university, is based on the popular indie game
+            "Getting over it with Bennett Foddy". The goal in this game is to reach the end of the level with only a sledgehammer to move around.
             Besides the almost impossible standard level to complete this game also features a world editor where you can create a world of your own!
             At last there are also several hidden secrets placed all around the map.
         </>,
